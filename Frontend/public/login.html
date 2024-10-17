@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <form id="loginForm">
+            <h1>Login Page</h1>
+            <div class="student-image">
+                <img src="thammasatemblem.png" width="80px" height="80px">
+            </div>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Enter your username"
+                required>
+            </div>
+            <div class="input-box">
+                <input type="password"id="password" placeholder="Enter your password"
+                required>
+                <img src="eyeclose.png" width="20" height="20" id="eyeicon">
+            </div>
+            <div class="role-box">
+                <select id="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="lecturer">Lecturer</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+            <div class="button-login">
+                <button type="submit" class="login-button">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
